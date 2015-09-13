@@ -1,5 +1,15 @@
 function OpenCode() {
 
+	document.getElementById("codeDetails").style.height = "500px";
+	document.getElementById("codeText").style.opacity = "1";
+	document.getElementById("codeText").style.lineHeight = "normal";
+	var delay=500; //1 seconds
+
+setTimeout(function(){
+	
+	document.getElementById("codeDetails").style.height = "100%";
+}, delay); 
+	
 }
 
 (function (window, $) {
