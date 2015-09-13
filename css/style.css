@@ -78,7 +78,6 @@ footer {
 	width: 32%;
 	margin-left: 1%;
 	margin-top: 160px;
-	background-color: blue;
 	margin-bottom: 3%;
 
 }
@@ -91,17 +90,30 @@ footer {
 	padding-bottom: 75%;
 }
 
+.code > .card_image, #codeDetails{
+	background-color: #2ECC71;
+}
+
+.design > .card_image, #designDetails{
+	background-color: #F39C12;
+}
+
+.more > .card_image, #moreDetails{
+	background-color: #3498DB;
+}
+
 .card_button{
 	position: relative;
 	width: 100%;
-	padding: 2em 0;
+	padding: 1em 0;
 	display: block;
 	height: 1em; 	
-
+font-family: 'Poiret One', cursive;
+font-size: 1.5em;
+font-weight: bold;
   cursor: pointer;
-  background: #89669b;
-  color: white;
-  font-size: 1em;
+  background: white;
+  color:black ;
 }
 
 .card_details{
@@ -119,6 +131,7 @@ footer {
 	      -webkit-transition: all 0.4s ease-in-out;
                   -moz-transition: all 0.4s ease-in-out;
                   transition: all 0.4s ease-in-out;
+                  color: white;
 }
 
 .ripple{
