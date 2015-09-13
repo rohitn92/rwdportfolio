@@ -182,6 +182,7 @@ font-weight: bold;
 		padding-top: 0.5em;
 	  margin-right: 3.5em;
 	}
+
 }
 
 
@@ -201,6 +202,7 @@ font-weight: bold;
 	#myTitle{
 		display: none;
 	}
+
 }
 
 @media screen and (max-height: 560px){
@@ -273,6 +275,26 @@ header {
 		padding-top: 0.5em;
 	  margin-right: 3.5em;
 	}
+  .foc-main, .foc-left, .foc-right, .foc-bottom{
+      padding: 0;
+      width: 30px;
+        height: 30px;
+      -moz-border-radius: 50%;
+          -webkit-border-radius: 50%;
+          border-radius: 50%;
+    }
+    .page-container {
+          position: absolute;
+    float: left;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+    bottom: 0;
+    width: 400px;
+    }
+  
+#footerMsg{
+	display: none;
+}
 
 }
 
@@ -337,5 +359,24 @@ header {
 	margin-top: 10em;
 }
 
+  .foc-main, .foc-left, .foc-right, .foc-bottom{
+      padding: 0;
+      width: 50px;
+        height: 50px;
+      -moz-border-radius: 50%;
+          -webkit-border-radius: 50%;
+          border-radius: 50%;
+    }
+    .page-container {
+          position: absolute;
+    float: left;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    bottom: 0;
+    }
+  
+#footerMsg{
+	display: none;
+}
 
 }

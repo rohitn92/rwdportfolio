@@ -3,17 +3,19 @@
 <head>
 <title> Portfolio | ROHIT NIGAM </title>
 
-<link rel="stylesheet" type="text/css" href="css/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/flipout_cards.css">
+<link rel="stylesheet" type="text/css" href="css/contact.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 
 <link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Poiret+One|Pacifico|Jura' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600' rel='stylesheet' type='text/css'>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
+<script src="js/jquery.flipout_cards.js"></script>
 <script src="js/script.js"></script>
-
 
 </head>
 
@@ -180,8 +182,51 @@
 
 
 <footer>
+<div class="page-container" style= " float:left; " >
 
-	</footer>
+             <div class="flipout">
+               <div class="foc-main" id="contact" >
+                  <img src="images/fs-paper-plane.png" style="width:100%; height:100%">
+               </div>
+
+               <div class="foc-right" >
+                  <a href="https://www.github.com/rohitn92" target="_blank"> <img src="images/fs-github_2.png" style="width:100%; height:100%"> </a>
+               </div>
+               <div class="foc-right" >
+                  <a href="https://www.behance.net/theronnicle" target="_blank">  <img src="images/fs-behance.png" style="width:100%; height:100%"> </a>
+               </div>
+               <div class="foc-right">
+                  <a href="https://in.linkedin.com/in/rohitn92" target="_blank">  <img src="images/fs-linkedin_1.png" style="width:100%; height:100%"> </a>
+               </div>
+               <div class="foc-right">
+                  <a href="http://blog.rohitnigam.com/" target="_blank">  <img src="images/fs-tumblr_1.png" style="width:100%; height:100%"> </a>
+               </div>
+               <div class="foc-right">
+                  <a href="https://twitter.com/theronnicle" target="_blank">  <img src="images/fs-twitter.png" style="width:100%; height:100%"> </a>
+               </div>
+               <div class="foc-right">
+                  <a href="https://google.com/+RohitNigam92" target="_blank" >  <img src="images/fs-google_3.png" style="width:100%; height:100%"> </a>
+               </div>
+               <div class="foc-right">
+                  <a href="https://www.facebook.com/rohit.nigam" target="_blank">  <img src="images/fs-facebook_2.png" style="width:100%; height:100%"> </a>
+               </div>
+               <div class="foc-right" >
+                 <a href="mailto:rohit_nigam1992@hotmail.com" data-toggle=snackbar data-content="rohit_nigam1992@gmail.com" data-timeout="10000">
+                    <img src="images/fs-envelope.png" style="width:100%; height:100%"> </a>
+                     </div>
+             </div>
+         </div>
+          <div id="footerMsg">This site is inspired by Google's Material Deisgn, Flat art and lots of love and obsession.</div>
+        </div>
+</footer>
+
+<script>
+
+$(".flipout").flipout_cards({
+   animation: "flipOut"    ,
+   beforeOpen: function() {console.log("flipped");}    // Animations available are: flipOut, slideOut and foldOut. The default value is flipOut
+ });
+</script>
 </body>
 
 

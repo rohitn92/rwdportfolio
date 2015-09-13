@@ -160,3 +160,6 @@ console.log("Close More");
   });
   
 })(window, jQuery);
+
+
+// For Flipout contacts

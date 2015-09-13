@@ -1,0 +1,23 @@
+
+    .foc-main, .foc-left, .foc-right, .foc-bottom{
+      padding: 0;
+      width: 40px;
+        height: 40px;
+      -moz-border-radius: 50%;
+          -webkit-border-radius: 50%;
+          border-radius: 50%;
+    }
+    .page-container {
+          position: absolute;
+    float: left;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    bottom: 0;
+    }
+
+#footerMsg{
+
+	font-family: 'Poiret One', cursive;
+	font-weight: bold;
+	float:right; padding:30px; font-size: 0.8em; position:relative;
+}
