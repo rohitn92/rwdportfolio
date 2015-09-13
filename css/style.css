@@ -70,7 +70,7 @@ footer {
 	flex-wrap: wrap;
 	  margin-left: auto;
   margin-right: auto;
-  padding-bottom: 3em;
+  padding-bottom: 3.5em;
 
 }
 
@@ -225,6 +225,10 @@ footer {
 
 @media screen and (min-width: 320px) and (max-width: 750px) {
 
+	.content{
+		padding-bottom: 4em;
+	}
+
 	.card{
 	width: 80%;
 	margin-left: auto;
@@ -274,6 +278,9 @@ header {
 	z-index: 99;
 }
 
+.content{
+	padding-bottom: 6em;
+}
 
 
 .header_logo{
