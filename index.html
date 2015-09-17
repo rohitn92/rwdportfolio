@@ -9,13 +9,16 @@
 <link rel="stylesheet" type="text/css" href="css/flipout_cards.css">
 <link rel="stylesheet" type="text/css" href="css/contact.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/flickity.css" media="screen">
 
-<link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Poiret+One|Pacifico|Jura' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Poiret+One|Pacifico|Jura|Open+Sands' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600' rel='stylesheet' type='text/css'>
 
 
 <script src="js/jquery.flipout_cards.js"></script>
 <script src="js/script.js"></script>
+<script src="js/flickity.pkgd.min.js"> </script>
+
 
 </head>
 
@@ -34,57 +37,112 @@
 
 <div class="content" id="contentId">
 
-<div class = "card code">
+<div class = "card code" id="codeId">
 	<div class = "card_image ripple"></div>
 	<div class = "card_button ripple" onclick="OpenCode()"> "Checkout" my Code skills	</div>
 	<div class = "card_details" id="codeDetails">
 	<div class = "card_text" id="codeText">	
-	Hi
-	How are you.
-	<br \>Hi
-	How are you.
-	<br \>Hi
-	How are you.
-	<br \>Hi
-	How are you.
-	<br \>Hi
-	How are you.
-	<br \>Hi
-	How are you.
-	<br \>Hi
-	How are you.
-	<br \>Hi
-	How are you.
-	<br \>Hi
-	How are you.
-	<br \>Hi
-	How are you.
-	<br \>Hi
-	How are you.
-	<br \>Hi
-	How are you.
-	<br \>Hi
-	How are you.
-	<br \>Hi
-	How are you.
-	<br \>Hi
-	How are you.
-	<br \>Hi
-	How are you.
-	<br \>Hi
-	How are you.
-	<br \>Hi
-	How are you.
-	<br \>Hi
-	How are you.
-	<br \>Hi
-	How are you.last
-	<br \> 
+  
+  <div class="detailsHeading"> 
+	  	<span class="mainHead"> I'm fluent in -  </span>
+	  	
+	  </div>
+          <div class="detailsText">
+            	<ul class="details_list">
+              <li>&#8226; Java</li>
+              <li>&#8226; C# .NET </li>
+              <li>&#8226; C/C++ </li>
+            </ul>
+           <div class="detailsHeading">   <span class="subHead"> Also speak a bit of - </span>
+       </div>
+            	<ul class="details_list">
+              <li>&#8226; SQL</li>
+              <li>&#8226; Python</li>
+              <li>&#8226; Shell</li>
+              <li>&#8226; Assembly</li>
+            </ul> </div>
+
+              <div class="detailsHeading"> 
+	  	<span class="mainHead"> Web Slinging ain't easy -   </span>
+	  	
+	  </div>
+          <div class="detailsText">
+            	<ul class="details_list">
+              <li>&#8226; HTML</li>
+              <li>&#8226; CSS </li>
+              <li>&#8226; JavaScript </li>
+              <li>&#8226; ASP .NET </li>
+            </ul>
+           <div class="detailsHeading">   <span class="subHead"> Sometimes I dabble into - </span>
+       </div>
+            	<ul class="details_list">
+              <li>&#8226; jQuery</li>
+              <li>&#8226; NodeJS</li>
+              <li>&#8226; JSP & Servlets</li>
+              <li>&#8226; Web Components</li>
+              <li>&#8226; AJAX</li>
+              <li>&#8226; JSON </li>
+            </ul> </div>
+
+              <div class="detailsHeading"> 
+	  	<span class="mainHead"> A Framework and a dream -   </span>
+	  	
+	  	
+	  </div>
+          <div class="detailsText">
+            	<ul class="details_list">
+              <li>&#8226; Bootstrap </li>
+              <li>&#8226; AngularJS </li>
+              <li>&#8226; ExpressJS </li>
+              <li>&#8226; Polymer </li>
+              <li>&#8226; NUnit </li>
+            </ul>
+        </div>
+           
+
+              <div class="detailsHeading"> 
+	  	<span class="mainHead"> Where is it all stored?   </span>
+	  	
+	  	
+	  </div>
+          <div class="detailsText">
+            	<ul class="details_list">
+              <li>&#8226; MySQL</li>
+              <li>&#8226; Oracle 11g </li>
+              <li>&#8226; MSSQL </li>
+              <li>&#8226; MongoDB </li>
+            </ul>
+            </div>
+
+ <div class="detailsHeading">  
+	  	<span class="mainHead"> Tools of the trade -   </span>
+	  	<span class="subHead">  </span>
+	  	
+	  </div>
+          <div class="detailsText">
+            	<ul class="details_list">
+              <li>&#8226; Visual Studios</li>
+              <li>&#8226; Git & GitHub </li>
+              <li>&#8226; PerForce </li>
+              <li>&#8226; Netbeams </li>
+              <li>&#8226; IntelliJ </li>
+              <li>&#8226; Eclipse </li>
+            </ul>
+            </div>
+
+           
+
 </div>
 </div>
 </div>
-<div class = "card design" > 
-	<div class = "card_image ripple"></div>
+<div class = "card design" id = "designId"> 
+	<div class = "card_image " id="designImgDiv">
+
+
+
+
+
+	</div>
 	<div class = "card_button ripple" onclick="OpenDesign()"> See stuff I Designed </div>
 	<div class = "card_details" id="designDetails"> 	<div class = "card_text" id="designText">	
 	Hi
@@ -130,7 +188,7 @@
 	<br \> 
 </div></div>
 </div>
-<div class = "card more" > 
+<div class = "card more" id="moreId" > 
 <div class = "card_image ripple"></div>
 	<div class = "card_button ripple" onclick="OpenMore()" > Explore more about Me </div>
 	<div class = "card_details" id="moreDetails">	<div class = "card_text" id="moreText">	

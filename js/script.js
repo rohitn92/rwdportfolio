@@ -1,5 +1,5 @@
 var codeIsOpen = 0, designIsOpen = 0, moreIsOpen=0;
-
+var oWidth = 0;
 function OpenCode() {
 
 console.log("Open Code");
@@ -28,13 +28,18 @@ else { CloseCode();
 
 function OpenDesign() {
 
+document.getElementById("designImgDiv").style.backgroundImage = "url('images/2.jpg')";
 
 console.log("Open Design");
 	if (designIsOpen == 0) {
 
+oWidth = document.getElementById("codeId").style.width;
 		CloseCode();
 		CloseMore();
+document.getElementById("codeId").style.width = "0%";
 
+document.getElementById("moreId").style.width = "0%";
+document.getElementById("designId").style.width = "90%";
 	document.getElementById("designDetails").style.height = "500px";
 	document.getElementById("designText").style.opacity = "1";
 	document.getElementById("designText").style.lineHeight = "normal";
@@ -53,6 +58,10 @@ document.getElementById("designDetails").style.height = h+"px";
 	}
 	else
 	{
+
+		document.getElementById("codeId").style.width = oWidth;
+		document.getElementById("moreId").style.width = oWidth;
+		document.getElementById("designId").style.width = oWidth;
 		CloseDesign();
 	}
 }
