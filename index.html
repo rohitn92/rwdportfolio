@@ -6,10 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
 <link rel="stylesheet" type="text/css" href="css/flipout_cards.css">
 <link rel="stylesheet" type="text/css" href="css/contact.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/flickity.css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 
 <link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Poiret+One|Pacifico|Jura|Open+Sands' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600' rel='stylesheet' type='text/css'>
@@ -25,7 +27,7 @@
 
 <body>
 
-	<header>  
+	<header>
 
 			<img class = "header_logo" src = "images/myicon.png" alt = "Hi!">
 
@@ -41,11 +43,11 @@
 	<div class = "card_image ripple"></div>
 	<div class = "card_button ripple" onclick="OpenCode()"> "Checkout" my Code skills	</div>
 	<div class = "card_details" id="codeDetails">
-	<div class = "card_text" id="codeText">	
-  
-  <div class="detailsHeading"> 
+	<div class = "card_text" id="codeText">
+
+  <div class="detailsHeading">
 	  	<span class="mainHead"> I'm fluent in -  </span>
-	  	
+
 	  </div>
           <div class="detailsText">
             	<ul class="details_list">
@@ -62,9 +64,9 @@
               <li>&#8226; Assembly</li>
             </ul> </div>
 
-              <div class="detailsHeading"> 
+              <div class="detailsHeading">
 	  	<span class="mainHead"> Web Slinging ain't easy -   </span>
-	  	
+
 	  </div>
           <div class="detailsText">
             	<ul class="details_list">
@@ -84,10 +86,10 @@
               <li>&#8226; JSON </li>
             </ul> </div>
 
-              <div class="detailsHeading"> 
+              <div class="detailsHeading">
 	  	<span class="mainHead"> A Framework and a dream -   </span>
-	  	
-	  	
+
+
 	  </div>
           <div class="detailsText">
             	<ul class="details_list">
@@ -98,12 +100,12 @@
               <li>&#8226; NUnit </li>
             </ul>
         </div>
-           
 
-              <div class="detailsHeading"> 
+
+              <div class="detailsHeading">
 	  	<span class="mainHead"> Where is it all stored?   </span>
-	  	
-	  	
+
+
 	  </div>
           <div class="detailsText">
             	<ul class="details_list">
@@ -114,10 +116,10 @@
             </ul>
             </div>
 
- <div class="detailsHeading">  
+ <div class="detailsHeading">
 	  	<span class="mainHead"> Tools of the trade -   </span>
 	  	<span class="subHead">  </span>
-	  	
+
 	  </div>
           <div class="detailsText">
             	<ul class="details_list">
@@ -130,21 +132,20 @@
             </ul>
             </div>
 
-           
+
 
 </div>
 </div>
 </div>
-<div class = "card design" id = "designId"> 
+<div class = "card design" id = "designId">
 	<div class = "card_image " id="designImgDiv">
-
 
 
 
 
 	</div>
 	<div class = "card_button ripple" onclick="OpenDesign()"> See stuff I Designed </div>
-	<div class = "card_details" id="designDetails"> 	<div class = "card_text" id="designText">	
+	<div class = "card_details" id="designDetails"> 	<div class = "card_text" id="designText">
 	Hi
 	How are you.
 	<br \>Hi
@@ -185,13 +186,13 @@
 	How are you.
 	<br \>Hi
 	How are you.
-	<br \> 
+	<br \>
 </div></div>
 </div>
-<div class = "card more" id="moreId" > 
+<div class = "card more" id="moreId" >
 <div class = "card_image ripple"></div>
 	<div class = "card_button ripple" onclick="OpenMore()" > Explore more about Me </div>
-	<div class = "card_details" id="moreDetails">	<div class = "card_text" id="moreText">	
+	<div class = "card_details" id="moreDetails">	<div class = "card_text" id="moreText">
 	Hi
 	How are you.
 	<br \>Hi
@@ -232,7 +233,7 @@
 	How are you.
 	<br \>Hi
 	How are you.
-	<br \> 
+	<br \>
 </div> </div>
 </div>
 
@@ -284,6 +285,9 @@ $(".flipout").flipout_cards({
    animation: "flipOut"    ,
    beforeOpen: function() {console.log("flipped");}    // Animations available are: flipOut, slideOut and foldOut. The default value is flipOut
  });
+
+
+
 </script>
 </body>
 

@@ -1,7 +1,9 @@
 var codeIsOpen = 0, designIsOpen = 0, moreIsOpen=0;
 var oWidth = 0;
-function OpenCode() {
+var pic = ["1.png","2.jpg","3.png","4.jpg"];
+var picindex=0;
 
+function OpenCode() {
 console.log("Open Code");
 if (codeIsOpen==0){
 	CloseDesign();
@@ -13,12 +15,12 @@ if (codeIsOpen==0){
 
 setTimeout(function(){
 	document.getElementById("codeDetails").style.height = "100%";
-	}, delay); 
+	}, delay);
 setTimeout(function(){
 var h = document.getElementById("codeDetails").clientHeight;
 document.getElementById("codeDetails").style.height = h+"px";
 	console.log(h);
-	}, 500); 
+	}, 500);
 
 	codeIsOpen=1;
 }
@@ -28,7 +30,10 @@ else { CloseCode();
 
 function OpenDesign() {
 
-document.getElementById("designImgDiv").style.backgroundImage = "url('images/2.jpg')";
+	++picindex;
+	if (picindex >= 4) picindex = 0;
+	console.log("INDEX:" + picindex);
+document.getElementById("designImgDiv").style.backgroundImage = "url('images/" + pic[picindex] + "')";
 
 console.log("Open Design");
 	if (designIsOpen == 0) {
@@ -40,6 +45,7 @@ document.getElementById("codeId").style.width = "0%";
 
 document.getElementById("moreId").style.width = "0%";
 document.getElementById("designId").style.width = "90%";
+/*
 	document.getElementById("designDetails").style.height = "500px";
 	document.getElementById("designText").style.opacity = "1";
 	document.getElementById("designText").style.lineHeight = "normal";
@@ -47,13 +53,13 @@ document.getElementById("designId").style.width = "90%";
 
 setTimeout(function(){
 	document.getElementById("designDetails").style.height = "100%";
-	}, delay); 
+	}, delay);
 setTimeout(function(){
 var h = document.getElementById("designDetails").clientHeight;
 document.getElementById("designDetails").style.height = h+"px";
 	console.log(h);
-	}, 500); 
-	
+	}, 500);
+*/
 	designIsOpen = 1;
 	}
 	else
@@ -80,15 +86,15 @@ if (moreIsOpen == 0) {
 
 setTimeout(function(){
 	document.getElementById("moreDetails").style.height = "100%";
-	}, delay); 
+	}, delay);
 setTimeout(function(){
 var h = document.getElementById("moreDetails").clientHeight;
 document.getElementById("moreDetails").style.height = h+"px";
 	console.log(h);
-	}, 500); 
+	}, 500);
 
 moreIsOpen = 1;
-	
+
 	}
 	else
 	{
@@ -105,18 +111,18 @@ console.log("Close Code");
 	var delay=300;
 	setTimeout(function(){
 	document.getElementById("codeText").style.lineHeight = "0";
-}, delay); 
+}, delay);
 }
 
 function CloseDesign(){
 designIsOpen =0;
 console.log("Close Design");
-	var delay=300;
+/*	var delay=300;
 	document.getElementById("designDetails").style.height = "0";
 	document.getElementById("designText").style.opacity = "0";
 	setTimeout(function(){
 		document.getElementById("designText").style.lineHeight = "0";
-	}, delay); 
+	}, delay);*/
 }
 
 function CloseMore(){
@@ -128,29 +134,29 @@ console.log("Close More");
 	document.getElementById("moreText").style.opacity = "0";
 		setTimeout(function(){
 	document.getElementById("moreText").style.lineHeight = "0";
-}, delay); 
+}, delay);
 
 }
 
 
 (function (window, $) {
-  
+
   $(function() {
-    
-    
+
+
     $('.ripple').on('click', function (event) {
       event.preventDefault();
-      
+
       var $div = $('<div/>'),
           btnOffset = $(this).offset(),
       		xPos = event.pageX - btnOffset.left,
       		yPos = event.pageY - btnOffset.top;
-      
 
-      
+
+
       $div.addClass('ripple-effect');
       var $ripple = $(".ripple-effect");
-      
+
       $ripple.css("height", $(this).height());
       $ripple.css("width", $(this).height());
       $div
@@ -158,17 +164,69 @@ console.log("Close More");
           top: yPos - ($ripple.height()/2),
           left: xPos - ($ripple.width()/2),
           background: $(this).data("ripple-color")
-        }) 
+        })
         .appendTo($(this));
 
       window.setTimeout(function(){
         $div.remove();
       }, 2000);
     });
-    
+
   });
-  
+
 })(window, jQuery);
 
+
+$(document).ready(function(){
+var theElement = document.getElementById("designId");
+
+theElement.addEventListener("touchend", handlerFunction, false);
+
+function handlerFunction(event) {
+
+//	OpenDesign();
+}
+
+theElement.addEventListener("touchstart", touchStartHandler, false);
+theElement.addEventListener("touchend", touchEndHandler, false);
+
+
+var touchesInAction = {};
+
+function touchStartHandler(event) {
+    var touches = event.changedTouches;
+
+    for(var j = 0; j < touches.length; j++) {
+
+         /* store touch info on touchstart */
+         touchesInAction[ "$" + touches[j].identifier ] = {
+
+            identifier : touches[j].identifier,
+            pageX : touches[j].pageX,
+            pageY : touches[j].pageY
+         };
+    }
+}
+
+function touchEndHandler(event) {
+    var touches = event.changedTouches;
+
+    for(var j = 0; j < touches.length; j++) {
+
+        /* access stored touch info on touchend */
+        var theTouchInfo = touchesInAction[ "$" + touches[j].identifier ];
+        theTouchInfo.dx = touches[j].pageX - theTouchInfo.pageX;  /* x-distance moved since touchstart */
+        theTouchInfo.dy = touches[j].pageY - theTouchInfo.pageY;  /* y-distance moved since touchstart */
+				console.log(theTouchInfo.dx); console.log(theTouchInfo.dy);
+
+				var x = Math.abs(theTouchInfo.dx); var y = Math.abs(theTouchInfo.dy);
+				if (x>25 && y < 20) OpenDesign();
+    }
+
+    /* determine what gesture was performed, based on dx and dy (tap, swipe, one or two fingers etc. */
+
+}
+
+});
 
 // For Flipout contacts
