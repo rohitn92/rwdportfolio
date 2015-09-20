@@ -8,6 +8,12 @@ console.log("Open Code");
 if (codeIsOpen==0){
 	CloseDesign();
 	CloseMore();
+	var lilicons = document.getElementsByClassName("lilicon");
+var i;
+for (i = 0; i < lilicons.length; i++) {
+    lilicons[i].style.display = "inline";
+}
+
 	document.getElementById("codeDetails").style.height = "500px";
 	document.getElementById("codeText").style.opacity = "1";
 	document.getElementById("codeText").style.lineHeight = "normal";
@@ -39,12 +45,16 @@ console.log("Open Design");
 	if (designIsOpen == 0) {
 
 oWidth = document.getElementById("codeId").style.width;
+
 		CloseCode();
 		CloseMore();
+
+if (document.documentElement.clientWidth > 800)
+{
 document.getElementById("codeId").style.width = "0%";
 
 document.getElementById("moreId").style.width = "0%";
-document.getElementById("designId").style.width = "90%";
+document.getElementById("designId").style.width = "80%";
 /*
 	document.getElementById("designDetails").style.height = "500px";
 	document.getElementById("designText").style.opacity = "1";
@@ -58,8 +68,8 @@ setTimeout(function(){
 var h = document.getElementById("designDetails").clientHeight;
 document.getElementById("designDetails").style.height = h+"px";
 	console.log(h);
-	}, 500);
-*/
+}, 500);*/
+}
 	designIsOpen = 1;
 	}
 	else
@@ -110,8 +120,22 @@ console.log("Close Code");
 	document.getElementById("codeText").style.opacity = "0";
 	var delay=300;
 	setTimeout(function(){
+
 	document.getElementById("codeText").style.lineHeight = "0";
+
+
 }, delay);
+
+
+setTimeout(function(){
+	var lilicons = document.getElementsByClassName("lilicon");
+	var i;
+	for (i = 0; i < lilicons.length; i++) {
+		lilicons[i].style.display = "none";
+	}
+
+}, delay);
+
 }
 
 function CloseDesign(){

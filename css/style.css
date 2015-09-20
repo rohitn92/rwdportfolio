@@ -182,6 +182,7 @@ font-weight: bold;
 	  background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+
 		background-color: black;
 }
 
@@ -264,7 +265,9 @@ padding: 0;
 .detailsText{
 }
 
-
+.lilicon{
+	display: none;
+}
 
 @media screen and (max-width: 750px) and (min-height: 320px ) {
 
