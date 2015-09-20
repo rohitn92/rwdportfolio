@@ -3,6 +3,8 @@ var oWidth = 0;
 var pic = ["1.png","2.jpg","3.png","4.jpg"];
 var picindex=0;
 
+
+
 function OpenCode() {
 console.log("Open Code");
 if (codeIsOpen==0){
@@ -100,6 +102,12 @@ console.log("Open more");
 if (moreIsOpen == 0) {
 	CloseCode();
 	CloseDesign();
+	var lilicons = document.getElementsByClassName("lilicon2");
+var i;
+for (i = 0; i < lilicons.length; i++) {
+		lilicons[i].style.display = "inline";
+}
+
 	document.getElementById("moreDetails").style.height = "500px";
 	document.getElementById("moreText").style.opacity = "1";
 	document.getElementById("moreText").style.lineHeight = "normal";
@@ -171,6 +179,16 @@ console.log("Close More");
 	document.getElementById("moreText").style.lineHeight = "0";
 }, delay);
 
+
+setTimeout(function(){
+	var lilicons = document.getElementsByClassName("lilicon2");
+	var i;
+	for (i = 0; i < lilicons.length; i++) {
+		lilicons[i].style.display = "none";
+	}
+
+}, delay);
+
 }
 
 
@@ -222,6 +240,11 @@ function handlerFunction(event) {
 //	OpenDesign();
 }
 
+if (document.documentElement.clientWidth < 800)
+{
+	document.getElementById("designBtn").innerText = "Swipe Through my Designs";
+}
+
 theElement.addEventListener("touchstart", touchStartHandler, false);
 theElement.addEventListener("touchend", touchEndHandler, false);
 
@@ -255,7 +278,7 @@ function touchEndHandler(event) {
 				console.log(theTouchInfo.dx); console.log(theTouchInfo.dy);
 
 				var x = Math.abs(theTouchInfo.dx); var y = Math.abs(theTouchInfo.dy);
-				if (x>25 && y < 20) {
+				if (x>25 && y < 30) {
 					if (theTouchInfo.dx<0) moveRight();
 					if (theTouchInfo.dx>0) moveLeft();
 				}

@@ -78,7 +78,7 @@ footer {
 
 .card{
 	width: 32%;
-	margin-top: 160px;
+	margin-top: 10em;
 	margin-bottom: 3%;
 	margin-left: auto;
 	margin-right: auto;
@@ -167,7 +167,7 @@ font-weight: bold;
 }
 
 #moreText{
-	text-align: right;
+	text-align: left;
 }
 
 .code > .card_image{
@@ -290,6 +290,11 @@ padding: 0;
 .lilicon{
 	display: none;
 }
+
+.lilicon2{
+	display: none;
+}
+
 
 @media screen and (max-width: 750px) and (min-height: 320px ) {
 
