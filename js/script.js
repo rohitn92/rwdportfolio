@@ -36,11 +36,6 @@ else { CloseCode();
 
 function OpenDesign() {
 
-	++picindex;
-	if (picindex >= 4) picindex = 0;
-	console.log("INDEX:" + picindex);
-document.getElementById("designImgDiv").style.backgroundImage = "url('images/" + pic[picindex] + "')";
-
 console.log("Open Design");
 	if (designIsOpen == 0) {
 
@@ -82,6 +77,22 @@ document.getElementById("designDetails").style.height = h+"px";
 	}
 }
 
+function moveLeft(){
+	--picindex;
+	if (picindex < 0) picindex = 3;
+	console.log("INDEX:" + picindex);
+	console.log("moved left");
+document.getElementById("designImgDiv").style.backgroundImage = "url('images/" + pic[picindex] + "')";
+
+}
+function moveRight(){
+	++picindex;
+	if (picindex >= 4) picindex = 0;
+	console.log("INDEX:" + picindex);
+	console.log("moved right");
+document.getElementById("designImgDiv").style.backgroundImage = "url('images/" + pic[picindex] + "')";
+
+}
 
 function OpenMore() {
 
@@ -244,7 +255,10 @@ function touchEndHandler(event) {
 				console.log(theTouchInfo.dx); console.log(theTouchInfo.dy);
 
 				var x = Math.abs(theTouchInfo.dx); var y = Math.abs(theTouchInfo.dy);
-				if (x>25 && y < 20) OpenDesign();
+				if (x>25 && y < 20) {
+					if (theTouchInfo.dx<0) moveRight();
+					if (theTouchInfo.dx>0) moveLeft();
+				}
     }
 
     /* determine what gesture was performed, based on dx and dy (tap, swipe, one or two fingers etc. */
