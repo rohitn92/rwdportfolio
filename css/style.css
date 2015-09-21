@@ -250,7 +250,7 @@ padding: 0;
 }
 
 
-.details_list, .details_list2, ul{
+.details_list, .detailslist2{
 	margin: 0;
 	padding-left:  2em;
 }
@@ -445,7 +445,7 @@ padding: 0;
 
 }
 
-.details_list, .details_list2, ul{
+.details_list, .detailslist2{
 	margin: 0;
 	padding-left:  1.5em;
 	font-size: 0.8em;
