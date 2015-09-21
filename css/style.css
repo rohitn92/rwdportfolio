@@ -11,6 +11,7 @@ html, body {
 }
 
 
+
 header {
 	width: 100%;
 	background-color: white;
@@ -22,6 +23,9 @@ header {
 	text-align: center;
 	position: fixed;
 	z-index: 99;
+	-webkit-transition: all 0.4s ease-in-out;
+						-moz-transition: all 0.4s ease-in-out;
+						transition: all 0.4s ease-in-out;
 }
 
 footer {
@@ -43,6 +47,9 @@ footer {
     margin-left: 1.5em;
     margin-top: 2em;
     float: left;
+		-webkit-transition: all 0.4s ease-in-out;
+							-moz-transition: all 0.4s ease-in-out;
+							transition: all 0.4s ease-in-out;
 
 }
 
@@ -56,6 +63,9 @@ footer {
 	  padding-top: 0.25em;
       color: black;
       margin-bottom: 0;
+			-webkit-transition: all 0.4s ease-in-out;
+								-moz-transition: all 0.4s ease-in-out;
+								transition: all 0.4s ease-in-out;
 
 }
 
@@ -64,7 +74,50 @@ footer {
 	 font-family: 'Pacifico', cursive;
     margin-top: 0.125em;
       margin-right: 8em;
+			opacity:1;
+			-webkit-transition: all 0.4s ease-in-out;
+								-moz-transition: all 0.4s ease-in-out;
+								transition: all 0.4s ease-in-out;
 }
+
+
+header.smaller{
+
+			height: 8%;
+			max-height: 100px;
+
+	-webkit-transition: all 0.4s ease-in-out;
+						-moz-transition: all 0.4s ease-in-out;
+						transition: all 0.4s ease-in-out;
+}
+
+header.smaller #myTitle{
+	-webkit-transition: all 0.4s ease-in-out;
+						-moz-transition: all 0.4s ease-in-out;
+						transition: all 0.4s ease-in-out;
+
+				      margin-right: 5.2em;
+	opacity: 0;
+}
+
+header.smaller #myName{
+	font-size: 2em;
+	padding-top: 0.5em;
+	margin-right: 3.5em;
+	-webkit-transition: all 0.4s ease-in-out;
+						-moz-transition: all 0.4s ease-in-out;
+						transition: all 0.4s ease-in-out;
+}
+
+header.smaller .header_logo{
+
+	height: 2.5em;
+	margin: 1em;
+	-webkit-transition: all 0.4s ease-in-out;
+						-moz-transition: all 0.4s ease-in-out;
+						transition: all 0.4s ease-in-out;
+}
+
 
 .content{
 	width: 100%;

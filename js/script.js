@@ -292,4 +292,18 @@ function touchEndHandler(event) {
 
 });
 
+$(document).on("scroll", function(){
+		if
+			($(document).scrollTop() > 10 ){
+				console.log("SCROLL DOWN");
+  $("header").addClass("smaller");
+		}
+		else
+		{
+				console.log("SCROLL UP");
+				$("header").removeClass("smaller");
+		}
+	});
+
+
 // For Flipout contacts
