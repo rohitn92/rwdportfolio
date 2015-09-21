@@ -249,7 +249,8 @@ padding: 0;
 
 }
 
-.details_list{
+
+.details_list, .details_list2, ul{
 	margin: 0;
 	padding-left:  2em;
 }
@@ -444,7 +445,7 @@ padding: 0;
 
 }
 
-.details_list{
+.details_list, .details_list2, ul{
 	margin: 0;
 	padding-left:  1.5em;
 	font-size: 0.8em;
@@ -470,8 +471,8 @@ padding: 0;
 }
 
 .mainHead{
-	font-size: 1em;
-	font-weight: 300;
+	font-size: 0.9em;
+	font-weight: bold;
 }
 
 .subHead{
