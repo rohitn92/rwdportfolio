@@ -52,6 +52,7 @@ document.getElementById("codeId").style.width = "0%";
 
 document.getElementById("moreId").style.width = "0%";
 document.getElementById("designId").style.width = "80%";
+	document.getElementById("designBtn").innerText = "Click again to close";
 /*
 	document.getElementById("designDetails").style.height = "500px";
 	document.getElementById("designText").style.opacity = "1";
@@ -75,6 +76,7 @@ document.getElementById("designDetails").style.height = h+"px";
 		document.getElementById("codeId").style.width = oWidth;
 		document.getElementById("moreId").style.width = oWidth;
 		document.getElementById("designId").style.width = oWidth;
+		document.getElementById("designBtn").innerText = "See stuff I Designed";
 		CloseDesign();
 	}
 }
