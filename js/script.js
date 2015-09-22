@@ -246,6 +246,21 @@ if (document.documentElement.clientWidth < 800)
 {
 	document.getElementById("designBtn").innerText = "Swipe Through my Designs";
 }
+else {
+	$(document).on("scroll", function(){
+			if
+				($(document).scrollTop() > 10 ){
+					console.log("SCROLL DOWN");
+	  $("header").addClass("smaller");
+			}
+			else
+			{
+					console.log("SCROLL UP");
+					$("header").removeClass("smaller");
+			}
+		});
+
+}
 
 theElement.addEventListener("touchstart", touchStartHandler, false);
 theElement.addEventListener("touchend", touchEndHandler, false);
@@ -292,18 +307,7 @@ function touchEndHandler(event) {
 
 });
 
-$(document).on("scroll", function(){
-		if
-			($(document).scrollTop() > 10 ){
-				console.log("SCROLL DOWN");
-  $("header").addClass("smaller");
-		}
-		else
-		{
-				console.log("SCROLL UP");
-				$("header").removeClass("smaller");
-		}
-	});
+
 
 
 // For Flipout contacts
