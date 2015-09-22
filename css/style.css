@@ -150,6 +150,7 @@ header.smaller .header_logo{
 	background-color: black;
 	padding-bottom: 75%;
 
+
 		      -webkit-transition: all 0.4s ease-in-out;
 	                  -moz-transition: all 0.4s ease-in-out;
 	                  transition: all 0.4s ease-in-out;
@@ -244,6 +245,8 @@ font-weight: bold;
 	  background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom right;
+
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
 }
 
 
