@@ -164,7 +164,7 @@ header.smaller .header_logo{
 }
 
 .more > .card_image, #moreDetails{
-	background-color: #3498DB;
+	background-color: #ECF0F1;
 }
 
 .card_button{
@@ -237,6 +237,13 @@ font-weight: bold;
     background-position: center;
 
 		background-color: black;
+}
+
+.more > .card_image{
+	  background-image: url("../images/more.jpg");
+	  background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
 
 
