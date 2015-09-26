@@ -1,6 +1,6 @@
 var codeIsOpen = 0, designIsOpen = 0, moreIsOpen=0;
 var oWidth = 0;
-var pic = ["1.png","2.jpg","3.png","4.jpg"];
+var pic = ["1.png","2.jpg","3.jpg","4.jpg"];
 var picindex=0;
 
 
