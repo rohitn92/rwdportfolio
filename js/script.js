@@ -118,7 +118,7 @@ for (i = 0; i < lilicons.length; i++) {
 }
 
 	document.getElementById("moreDetails").style.height = "500px";
-	
+	if (document.getElementById("moreDetails").style.height != 0){
 	document.getElementById("moreText").style.opacity = "1";
 	document.getElementById("moreText").style.lineHeight = "normal";
 	var delay=270; //1 seconds
@@ -133,7 +133,7 @@ document.getElementById("moreDetails").style.height = h+"px";
 	}, 500);
 
 moreIsOpen = 1;
-
+}
 	}
 	else
 	{
