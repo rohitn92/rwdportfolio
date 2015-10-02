@@ -118,13 +118,13 @@ for (i = 0; i < lilicons.length; i++) {
 }
 
 	document.getElementById("moreDetails").style.height = "500px";
-
+	
 	document.getElementById("moreText").style.opacity = "1";
 	document.getElementById("moreText").style.lineHeight = "normal";
 	var delay=270; //1 seconds
 
 setTimeout(function(){
-	//document.getElementById("moreDetails").style.height = "100%";
+	document.getElementById("moreDetails").style.height = "100%";
 	}, delay);
 setTimeout(function(){
 var h = document.getElementById("moreDetails").clientHeight;
