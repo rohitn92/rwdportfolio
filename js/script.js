@@ -8,8 +8,13 @@ var picindex=0;
 function OpenCode() {
 console.log("Open Code");
 if (codeIsOpen==0){
+
+	if (designIsOpen==1)
 	CloseDesign();
+
+	if (moreIsOpen==1)
 	CloseMore();
+	
 	var lilicons = document.getElementsByClassName("lilicon");
 var i;
 for (i = 0; i < lilicons.length; i++) {
@@ -19,8 +24,7 @@ for (i = 0; i < lilicons.length; i++) {
 	document.getElementById("codeDetails").style.height = "500px";
 	document.getElementById("codeText").style.opacity = "1";
 	document.getElementById("codeText").style.lineHeight = "normal";
-	var delay=270; //1 seconds
-
+	var delay=270;
 setTimeout(function(){
 	document.getElementById("codeDetails").style.height = "100%";
 	}, delay);
