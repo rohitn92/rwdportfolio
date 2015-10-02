@@ -14,7 +14,7 @@ if (codeIsOpen==0){
 
 	if (moreIsOpen==1)
 	CloseMore();
-	
+
 	var lilicons = document.getElementsByClassName("lilicon");
 var i;
 for (i = 0; i < lilicons.length; i++) {
@@ -106,7 +106,10 @@ function OpenMore() {
 
 console.log("Open more");
 if (moreIsOpen == 0) {
+
+	if (codeIsOpen == 1)
 	CloseCode();
+	if (designIsOpen==1)
 	CloseDesign();
 	var lilicons = document.getElementsByClassName("lilicon2");
 var i;
