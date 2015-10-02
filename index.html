@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href="css/flipout_cards.css">
 <link rel="stylesheet" type="text/css" href="css/contact.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
 
 <link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Poiret+One|Pacifico|Jura|Open+Sands' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600' rel='stylesheet' type='text/css'>
@@ -18,6 +19,7 @@
 
 <script src="js/jquery.flipout_cards.js"></script>
 <script src="js/script.js"></script>
+<script src="js/typed.min.js"></script>
 
 
 </head>
@@ -37,9 +39,9 @@
 
 <div class="content" id="contentId">
 
-<div class = "card code" id="codeId">
+<div class = "card code  animated rotateInDownLeft" id="codeId">
 	<div class = "card_image ripple"></div>
-	<div class = "card_button ripple" onclick="OpenCode()"> "Checkout" my Code skills	</div>
+	<div class = "card_button ripple" onclick="OpenCode()"> "Checkout" how I <span id="typeout-text" style="font-size: 20pt;" ></span>.	</div>
 	<div class = "card_details" id="codeDetails">
 	<div class = "card_text" id="codeText">
 
@@ -136,7 +138,7 @@
 </div>
 </div>
 </div>
-<div class = "card design" id = "designId">
+<div class = "card design animated zoomIn" id = "designId">
 	<div class = "card_image " id="designImgDiv">
 <img id= "goleft" src = "images/left3.png" onclick="moveLeft()">
 
@@ -188,7 +190,7 @@
 	<br \>
 </div></div>
 </div>
-<div class = "card more" id="moreId" >
+<div class = "card more animated rotateInDownRight" id="moreId" >
 <div class = "card_image ripple"></div>
 	<div class = "card_button ripple" onclick="OpenMore()" > Explore more about Me </div>
 	<div class = "card_details" id="moreDetails">	<div class = "card_text" id="moreText">

@@ -301,13 +301,18 @@ function touchEndHandler(event) {
 				}
     }
 
-    /* determine what gesture was performed, based on dx and dy (tap, swipe, one or two fingers etc. */
 
 }
 
+							$(function () {
+									$("#typeout-text").typed({
+											strings: ["Code","Program","Develop"],
+											typeSpeed: 150,
+											backDelay: 900,
+											loop: true
+									});
+							});
+
+
+
 });
-
-
-
-
-// For Flipout contacts
