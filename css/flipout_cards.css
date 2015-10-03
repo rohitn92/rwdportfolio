@@ -21,7 +21,7 @@ body {
 }
 
 .foc-wrapper {
-  
+
   display: block;
   position: absolute;
   width: 379px;
@@ -31,7 +31,7 @@ body {
   -ms-perspective: 640px;
   -o-perspective: 640px;
   perspective: 640px;
-  
+
 }
 
 .foc-left-wrapper {
@@ -47,7 +47,7 @@ body {
   left: 0px;
   width: 100%;
   height: 270px;
-  
+
 }
 
 .foc-bottom-wrapper {
@@ -55,11 +55,11 @@ body {
   left: 0px;
   width: 100%;
   height: 270px;
-  
+
 }
 
 .foc-card {
-  background: #eee;
+  background: none;
   height: 350px;
   position: relative;
   width: 136px;
@@ -158,7 +158,7 @@ body {
   -moz-transform-origin: 0% 0%;
   -ms-transform-origin: 0% 0%;
   -o-transform-origin: 0% 0%;
-  
+
 }
 
 .foc-foldout.foc-top.foc-open.odd {
@@ -184,7 +184,7 @@ body {
   -moz-transform-origin: 0% 0%;
   -ms-transform-origin: 0% 0%;
   -o-transform-origin: 0% 0%;
-  
+
 }
 
 .foc-foldout.foc-bottom.foc-open:nth-child(even)  {
@@ -329,4 +329,3 @@ body {
   -o-transform-origin: 100% 0%;
   transform-origin: 100% 0%;
 }
-
