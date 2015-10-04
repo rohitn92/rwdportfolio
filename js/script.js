@@ -1,6 +1,6 @@
 var codeIsOpen = 0, designIsOpen = 0, moreIsOpen=0;
 var oWidth = 0;
-var pic = ["5.jpg","2.jpg","3.jpg","4.gif"];
+var pic = ["5.jpg","2.jpg","3.jpg","4.gif","6.jpg","7.png","8.jpg"];
 var picindex=0;
 
 
@@ -87,7 +87,7 @@ document.getElementById("designDetails").style.height = h+"px";
 
 function moveLeft(){
 	--picindex;
-	if (picindex < 0) picindex = 3;
+	if (picindex < 0) picindex = 6;
 	console.log("INDEX:" + picindex);
 	console.log("moved left");
 document.getElementById("designImgDiv").style.backgroundImage = "url('images/" + pic[picindex] + "')";
@@ -95,7 +95,7 @@ document.getElementById("designImgDiv").style.backgroundImage = "url('images/" +
 }
 function moveRight(){
 	++picindex;
-	if (picindex >= 4) picindex = 0;
+	if (picindex >= 7) picindex = 0;
 	console.log("INDEX:" + picindex);
 	console.log("moved right");
 document.getElementById("designImgDiv").style.backgroundImage = "url('images/" + pic[picindex] + "')";
@@ -256,9 +256,12 @@ if (document.documentElement.clientWidth < 800)
 }
 else {
 	$(document).on("scroll", function(){
+		$("#myTitle").removeClass("animated");
+		$("#myTitle").removeClass("fadeInDown");
 			if
 				($(document).scrollTop() > 10 ){
 					console.log("SCROLL DOWN");
+
 	  $("header").addClass("smaller");
 			}
 			else
