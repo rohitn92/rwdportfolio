@@ -43,6 +43,8 @@ else { CloseCode();
 function OpenDesign() {
 
 console.log("Open Design");
+if (document.documentElement.clientWidth > 800)
+{
 	if (designIsOpen == 0) {
 
 oWidth = document.getElementById("codeId").style.width;
@@ -50,30 +52,16 @@ oWidth = document.getElementById("codeId").style.width;
 		CloseCode();
 		CloseMore();
 
-if (document.documentElement.clientWidth > 800)
-{
+
 document.getElementById("codeId").style.width = "0%";
 
 document.getElementById("moreId").style.width = "0%";
 document.getElementById("designId").style.width = "80%";
 	document.getElementById("designBtn").innerText = "Click again to close";
-/*
-	document.getElementById("designDetails").style.height = "500px";
-	document.getElementById("designText").style.opacity = "1";
-	document.getElementById("designText").style.lineHeight = "normal";
-	var delay=270; //1 seconds
-
-setTimeout(function(){
-	document.getElementById("designDetails").style.height = "100%";
-	}, delay);
-setTimeout(function(){
-var h = document.getElementById("designDetails").clientHeight;
-document.getElementById("designDetails").style.height = h+"px";
-	console.log(h);
-}, 500);*/
-}
 	designIsOpen = 1;
-	}
+}
+
+
 	else
 	{
 
@@ -83,6 +71,8 @@ document.getElementById("designDetails").style.height = h+"px";
 		document.getElementById("designBtn").innerText = "See stuff I Designed";
 		CloseDesign();
 	}
+}
+else moveRight();
 }
 
 function moveLeft(){
