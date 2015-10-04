@@ -1,3 +1,10 @@
+ @font-face { font-family: 'Poiret One'; src: url('../fonts/PoiretOne-Regular.ttf'); }
+ @font-face { font-family: 'Pacifico'; src: url('../fonts/Pacifico.ttf'); }
+ @font-face { font-family: 'Open Sans'; src: url('../fonts/OpenSans-Regular.ttf');  font-weight: 400; font-style: normal; }
+ @font-face { font-family: 'Open Sans'; src: url('../fonts/OpenSans-Light.ttf');  font-weight: 300; font-style: light; }
+ @font-face { font-family: 'Open Sans'; src: url('../fonts/OpenSans-Semibold.ttf');  font-weight: 600; font-style: bold;}
+
+
 html, body {
 	background-color: #ECF0F1;
 	font-size: 100%;
