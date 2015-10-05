@@ -195,7 +195,7 @@ font-weight: bold;
 .card_details{
 	position: relative;
 	width: 100%;
-	background-color: green;
+	background-color: none;
 	height: 0;
 	    -webkit-transition: all 0.4s ease-in-out;
                   -moz-transition: all 0.4s ease-in-out;
