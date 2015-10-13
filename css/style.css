@@ -165,7 +165,7 @@ header.smaller .header_logo{
 }
 
 .code > .card_image, #codeDetails{
-	background-color: #ECF0F1;
+	background-color: #f2f2f2;
 }
 
 .design > .card_image, #designDetails{
@@ -173,7 +173,7 @@ header.smaller .header_logo{
 }
 
 .more > .card_image, #moreDetails{
-	background-color: #ECF0F1;
+	background-color: #f2f2f2;
 }
 
 .card_button{
